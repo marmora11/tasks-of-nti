@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <title>Cartoon Movies</title>
+</head>
+<body style="background-color: #7294f9; color: white;">
+    <script src="task2.js"></script>
+
+     <!-- header Section -->
+
+    <div class="row bg-dark text-white align-items-center p-3 m-0">
+
+        <div class="col-lg-2 fw-bold text-primary">
+            Cartoon Movies
+        </div>
+
+        <div class="col-lg-1">
+             <a href="#" class="text-white text-decoration-none">Home</a>
+        </div>
+
+         <div class="col-lg-1">
+             <a href="#" class="text-white text-decoration-none">New</a>
+         </div>
+
+        <div class="col-lg-1">
+             <a href="#" class="text-white text-decoration-none">Popular</a>
+        </div>
+
+         <!-- Search Section -->
+
+         <div class="col d-flex justify-content-end">
+              <input type="text" class="form-control w-50 me-2" placeholder="Search">
+              <button class="btn btn-primary">Search</button>
+         </div>
+    </div>
+
+     <!-- slider Section -->
+      
+        <div class="d-flex justify-content-center position-relative w-100 mx-auto" style="height: 400px;">
+            <img id="imgslider" class="img-fluid w-100" src="https://c4.wallpaperflare.com/wallpaper/141/820/1006/disney-princesses-moana-vaiana-sea-cartoon-movie-wallpaper-preview.jpg" alt="Slider Image">
+                <!-- Text -->
+        <div class="align-self-end position-absolute top-75 start-0 text-white p-4" >
+             <h1 id="imgTitle">Moana</h1>
+             <p>The best Disney adventure movie.</p>
+             <button class="btn btn-warning">Watch Now</button>
+         </div>
+            <button class="btn btn-primary position-absolute top-50 start-0 translate-middle-y" id="prevBtn" onclick="changeImage(-1)" ><</button>
+            <button class="btn btn-primary position-absolute top-50 end-0 translate-middle-y" id="nextBtn" onclick="changeImage(1)">></button>
+
+        </div>
+
+    <!-- movies-->
+
+     <div class="row bg-dark align-items-center" style="margin: 0px; color:white; padding: 20px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmCfoqtGjn7NXnoX6mYxN52WM8CwHuh9niv8XHJluyP_rR4iOEHBEtd3M&s=10" class="img-fluid w-50 align-self-left" alt="toy story">
+        <p class="align-self-right w-50">Toy Story is a heartwarming animated movie by Pixar about a group of toys that come to life when humans are not around. The story follows Woody, a loyal cowboy doll, and Buzz Lightyear, a space ranger action figure, as they learn to work together and become friends. Filled with humor, adventure, and memorable characters, Toy Story is a timeless film that celebrates friendship, loyalty, and imagination.
+        </p>
+     </div>
+     <div class="row bg-dark align-items-center" style="margin: 0px; color:white; padding: 20px;">
+        
+        <p class="align-self-left col-6">Mulan is a 2016 American 3D computer-animated musical adventure film produced by Walt Disney Animation Studios 
+            and released by Walt Disney Pictures. The film tells the story of Mulan,
+             a spirited Chinese teenager who sets sail on a daring mission to save her people.</p>
+        <img src="https://images3.alphacoders.com/112/thumb-1920-1129058.jpg" class="img-fluid col-6 align-self-right" alt="Mulan">
+     </div>
+
+    <!-- Movie Cards Section -->
+
+    <div class="container mt-4">
+        <div class="row justify-content-center align-items-center" id="movieCardsContainer" >
+            <div class="col-lg-3  mb-4" style="height: 350px;">
+                <div class="card h-100 w-100 mt-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmEI1Ry5xCQSi3TP7HM8JD4so3H6rOC20bgOlfL5FO5nfR0E4n_g1pmO8&s=10" class="card-img-top" alt="inside out">
+                    <div class="card-body">
+                        <h5 class="card-title">Inside Out</h5>
+                        <p class="card-text">A colorful journey into the mind of a young girl.</p>
+                        <button class="btn btn-primary">Play Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  mb-4" style="height: 350px;">
+                <div class="card h-100 mt-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4W2cofxMposDYNhvIbSufAQPUGtjd2YkWeFtnO4xQTpYH7oHDdR-Am6k&s=10" class="card-img-top" alt="encanto">
+                    <div class="card-body">
+                        <h5 class="card-title">Encanto</h5>
+                        <p class="card-text">A magical family story about a young girl with special powers and discoveries.</p>
+                        <button class="btn btn-primary">Play Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4" style="height: 350px;">
+                <div class="card h-100 w-100 mt-4">
+                    <img src="https://whatsondisneyplus.b-cdn.net/wp-content/uploads/2023/02/elemental-1024x576.jpg" class="card-img-top " alt="elemental" >
+                    <div class="card-body">
+                        <h5 class="card-title">Elemental</h5>
+                        <p class="card-text">A story about a young girl who can control fire and her journey to find her place in the world.</p>
+                        <button class="btn btn-primary">Play Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  mb-4" style="height: 350px;">
+                <div class="card h-100 w-100 mt-4">
+                    <img src="https://images3.alphacoders.com/114/thumb-1920-1144525.jpg" class="card-img-top" alt="the princess and the frog">
+                    <div class="card-body">
+                        <h5 class="card-title">The Princess and the Frog</h5>
+                        <p class="card-text">A magical tale of a princess who is turned into a frog.</p>
+                        <button class="btn btn-primary ">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <button class="btn btn-primary mt-4" id="loadMoreBtn">Load More</button>
+    </div>
+</div>
+
+    </div>
+
+<!-- footer Section -->
+ 
+<div class="row bg-dark align-items-center mt-4 justify-content-between" style=" color:white; padding: 30px;">
+    <div class="col-lg-6 text-left">© 2024 Cartoon Movies. All rights reserved.</div>
+    <button id="backToTopBtn" class="btn btn-warning col-lg-2 align-self-right" onclick="backtotop()">Back to Top</button>
+</div>
+
+</body>
+</html>
+
